@@ -12,17 +12,22 @@
 const findMax = (arr)=>{
     let max;
     // write your code here
-    for(var i=0;i<=findMax.length-1;i++){
-     max=findMax[i];
-     if(max<=findMax[i]){
-         max=findMax[i];
-     }   
+    for(var i=0;i<=arr.length;i++){
+     let num =arr[i+1];
+     if(arr[i]-num>0){
+         max=arr[i];
+     }
+     let count=arr.length-1;
+     let las=arr[count];
+     if(las-max>0){
+         max=las;
+     }
     }
     return max;
 }
   
-let arr = [12, 32, 45, 90, 78];
-alert(max);
+
+
 
 
 // 2) ---------------------
@@ -33,23 +38,31 @@ alert(max);
 //  [20, '234', 'car', 41, 20, 'chair'] ==> 81
 //  
 // ------------------------
-
-const sumNums = (arr)=>{
-    let sum;
-
-    // write your code here
-    for(var i=0;i<=findMax.length-1;i++){
-        
-
-        
+const sumNums = (arr) => {
+    let sum =0;
+    for (var i = 0; i <= arr.length - 1; i++) {
+        var num2 = arr[i]
+       var num1 = arr[i] + arr[i]
+       if(num1== num2*2) {
+            sum = sum +num2
+       }
     }
+    // write your code here
+    return sum;
+}
+
+
+        
+
+        
+    
 
     
 
 
         
-    }
-    return sum;
+    
+    
 
 
 // 3) ---------------------
@@ -60,22 +73,21 @@ const sumNums = (arr)=>{
 //  ['C#', 'JS', 'Ruby','Python' ] ==> ['Python','Ruby','JS','C#']
 // 
 // ------------------------
-const reverseArray = (arr= ["gender","name", "ahmad"])=>{
-    var reverseArray1=0;
-    // write your code here
-    for(var i=findMax.length-1;i>=1;i--)
-    {
-        reverseArray1=arr[i];
-      
-        
-    }
-    alert(reverseArray1);
+const reverseArray = (arr) => {
 
+
+
+    var output = [];
+    for (var i = arr.length - 1; i> -1; i--){
+        output.push(arr[i]);
+    }
+
+    return output;
+ 
 }
 
-  
- reverseArray=( arr);
+module.exports = { findMax, sumNums, reverseArray };
   
 
- 'use strict';
+ 
 
