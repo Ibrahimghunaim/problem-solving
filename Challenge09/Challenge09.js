@@ -144,3 +144,108 @@ const employeesBonus = (arr) => {
 // 
 // ==> 200
 // ------------------------
+const mostExpensive = (budget, mouseArray, keyBoardArray) => {
+
+// function max1(arr){
+//         let max = arr[0]
+// arr.forEach(e=>{
+    
+//     if(e>=max){
+//        max=e
+//             }   
+// })
+// return max
+//     }
+
+// // function maxkeyBoardArray(arr){
+// //         let max = arr[0]
+// // arr.forEach(e=>{
+// //     if(e>=max){
+// //        max=e
+// //             }   
+// // })
+// // return max
+// //     }
+//     let maxend = max1(keyBoardArray)
+//     let maxend1 =max1(mouseArray)
+//     let maxiam =maxend +maxend1
+//   while(maxiam>=budget){
+//     let o=try2(maxend,mouseArray)
+//     let y =try2(maxend1,keyBoardArray)
+//     maxiam = o+y
+//   }
+       
+   
+//     function  try2(num,arr){
+//         let max = arr[0]
+//         let newarr=[]
+//         for(i=0;i<=arr.length -1;i++){
+//            if(arr[i]!=num){
+//                newarr.push(arr[i])
+//            }
+//         }
+// let last= max1(newarr)
+// return last
+//     }
+ 
+//     return maxiam
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    let max =mouseArray[0]
+//    let maxend = 0
+//    let maxend1=0
+//    let max1=keyBoardArray[0]
+//    mouseArray.forEach(el =>{
+//        if(el>=max){
+//            max = el
+//        }
+//    })
+//    keyBoardArray.forEach(el2 =>{
+
+//     if(el2>=max1){
+//         max1=el2
+//     }
+// });
+// if(maxend+maxend1 <=budget){
+//     return maxend+maxend1
+// }else{
+//     mouseArray.forEach(el =>{
+//         if(el>=max){
+//             maxend = el
+//         }
+//     })
+//     keyBoardArray.forEach(el2 =>{
+ 
+//      if(el2>=max1){
+//          maxend1=el2
+//      }
+//  });
+// }
+
+
+
+module.exports = { arrInc, roundDecimals, employeesBonus, mostExpensive };
